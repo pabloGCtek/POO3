@@ -1,6 +1,6 @@
 package volador.modelo;
 
-public class Ave implements ObjetoVolador{
+public class Ave extends Animal implements ObjetoVolador{
     @Override
     public String despegar() {
         return("El ave despega");
@@ -20,5 +20,10 @@ public class Ave implements ObjetoVolador{
     }
     public String ponerHuevo() {
         return("El ave pone un huevo");
+    }
+
+    @Override
+    public String comer() {
+        return "el animal come";
     }
 }

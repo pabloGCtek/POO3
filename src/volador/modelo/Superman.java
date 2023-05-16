@@ -1,6 +1,6 @@
 package volador.modelo;
 
-public class Superman implements ObjetoVolador{
+public class Superman extends Kriptoniano implements ObjetoVolador{
 
     @Override
     public String despegar() {
@@ -16,6 +16,11 @@ public class Superman implements ObjetoVolador{
         return("SUPERMAN vuela");
     }
 
+    @Override
+    public String comer() {
+        return("SUPERMAN come");
+    }
+
     public String saltarEdificio() {
         return("SUPERMAN salta un edificio");
     }
@@ -23,4 +28,6 @@ public class Superman implements ObjetoVolador{
     public String pararBala() {
         return("SUPERMAN para una bala");
     }
+
+
 }
